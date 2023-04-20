@@ -1,0 +1,15 @@
+{
+    "tasks": {
+        "title": "Sun Animation",
+        "deadline": "Thu 20, April",
+        "description": "Animate the sun on blender. The animation should rotate around the sun and then the sun should explode.",
+        "target": [
+            "LLUF",
+            "PA"
+        ],
+        "requires": [
+            "blender",
+            "photoshop"
+        ]
+    }
+}
