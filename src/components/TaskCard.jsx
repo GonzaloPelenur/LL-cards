@@ -59,6 +59,7 @@ export function TaskCard(prop) {
                                         <Grid>
                                             <Badge color={target_to_color[item]}>{item}</Badge>
                                         </Grid>
+
                                     ))}
                                 </Row>
 
