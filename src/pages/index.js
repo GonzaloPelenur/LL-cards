@@ -4,24 +4,12 @@ import Airtable from 'airtable';
 import { Inter } from 'next/font/google'
 import { Container, Grid, Spacer, Button } from "@nextui-org/react";
 import Link from 'next/link';
+import { theme } from '../constants/colors'
 
 // require('dotenv').config()
 
 const inter = Inter({ subsets: ['latin'] })
 
-const theme = createTheme({
-  type: "light", // it could be "light" or "dark"
-  theme: {
-    colors: {
-      // brand colors
-      background: '#e3f5ff',
-
-      // ...  more colors
-    },
-    space: {},
-    fonts: {}
-  }
-})
 
 export default function Home() {
 

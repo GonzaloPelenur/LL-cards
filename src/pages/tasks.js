@@ -4,6 +4,7 @@ import Airtable from 'airtable';
 import { Inter } from 'next/font/google'
 import { Container, Grid, Spacer } from "@nextui-org/react";
 import { TaskCard } from "../components/TaskCard"
+import { theme } from '../constants/colors'
 
 // require('dotenv').config()
 
@@ -24,21 +25,6 @@ export async function getStaticProps() {
     },
   };
 }
-
-const theme = createTheme({
-  type: "light", // it could be "light" or "dark"
-  theme: {
-    colors: {
-      // brand colors
-      background: '#e3f5ff',
-
-
-      // ...  more colors
-    },
-    space: {},
-    fonts: {}
-  }
-})
 
 export default function Tasks({ data }) {
 
