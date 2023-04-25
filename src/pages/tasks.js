@@ -1,10 +1,11 @@
 import * as React from 'react';
-import { NextUIProvider, createTheme } from '@nextui-org/react';
+import { NextUIProvider, createTheme, Card } from '@nextui-org/react';
 import Airtable from 'airtable';
 import { Inter } from 'next/font/google'
 import { Container, Grid, Spacer } from "@nextui-org/react";
 import { TaskCard } from "../components/TaskCard"
 import { theme } from '../constants/colors'
+import { CardWrapper } from 'cards/components/CardWrapper';
 
 // require('dotenv').config()
 
@@ -37,9 +38,8 @@ export default function Tasks({ data }) {
           {data.map((item, index) => (
             <>
               <TaskCard data={item} key={index} />
-              <Spacer x={1} />
+              <Spacer x={3} />
             </>
-
           ))}
         </Grid>
       </Container>

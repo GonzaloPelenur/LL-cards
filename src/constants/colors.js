@@ -1,19 +1,13 @@
 import { createTheme } from '@nextui-org/react';
 
-const target_to_color = {
-    "LLUF": "secondary",
-    "MPA": "warning",
-    "MDA": "primary"
-}
-
 const tool_to_color = {
-    "Photoshop": "primary",
-    "After Effects": "secondary",
-    "Blender": "success",
-    "React": "warning",
-    "Figma": "error",
-    "Canva": "primary",
-    "Illustrator": "secondary"
+    "Photoshop": "Photoshop",
+    "After Effects": "AfterEffects",
+    "Blender": "Blender",
+    "React": "React",
+    "Figma": "Figma",
+    "Canva": "Canva",
+    "Illustrator": "Illustrator"
 }
 
 const theme = createTheme({
@@ -23,13 +17,16 @@ const theme = createTheme({
             // brand colors
             background: '#e3f5ff',
             hola: "red",
-            "Photoshop": "blue",
-            "After Effects": "blue",
-            "Blender": "green",
-            "React": "orange",
-            "Figma": "red",
+            "Photoshop": "#185acc",
+            "AfterEffects": "#7518cc",
+            "Blender": "#cc9018",
+            "React": "#18aecc",
+            "Figma": "#cc5a18",
             "Canva": "yellow",
-            "Illustrator": "pink"
+            "Illustrator": "pink",
+            "LLUF": "#5E2BFF",
+            "MPA": "#C65B7C",
+            "MDA": "#048A81"
 
             // ...  more colors
         },
@@ -38,4 +35,4 @@ const theme = createTheme({
     }
 })
 
-export { target_to_color, tool_to_color, theme }
+export { tool_to_color, theme }
